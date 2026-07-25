@@ -1,0 +1,2 @@
+# blitzfc.com
+# qbz-rpm
