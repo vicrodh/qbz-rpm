@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QBZ RPM Repository</title>
+    <style>
+      :root { color-scheme: dark; font-family: system-ui, sans-serif; }
+      body { max-width: 52rem; margin: 4rem auto; padding: 0 1.5rem; line-height: 1.6; }
+      code, pre { background: #18181b; border-radius: .4rem; }
+      code { padding: .15rem .3rem; }
+      pre { overflow-x: auto; padding: 1rem; }
+      a { color: #7dd3fc; }
+    </style>
+  </head>
+  <body>
+    <h1>QBZ RPM Repository</h1>
+    <p>Signed RPM packages for the QBZ desktop player and headless daemon.</p>
+    <h2>DNF</h2>
+    <pre><code>sudo curl --fail --location \
+  --output /etc/yum.repos.d/qbz.repo \
+  https://vicrodh.github.io/qbz-rpm/qbz.repo
+sudo dnf install qbz</code></pre>
+    <h2>Zypper</h2>
+    <pre><code>sudo curl --fail --location \
+  --output /etc/zypp/repos.d/qbz.repo \
+  https://vicrodh.github.io/qbz-rpm/qbz.repo
+sudo zypper refresh qbz
+sudo zypper install qbz</code></pre>
+    <p>
+      The desktop package includes <code>qbzd</code>. Install
+      <code>qbzd</code> instead for a headless-only system.
+    </p>
+    <p>
+      Signing key fingerprint:
+      <code id="fingerprint">published with the first release</code>
+    </p>
+    <p><a href="qbz-rpm-key.gpg">Download the signing key</a></p>
+    <p><a href="https://github.com/vicrodh/qbz">QBZ source and releases</a></p>
+  </body>
+</html>

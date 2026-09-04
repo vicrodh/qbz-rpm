@@ -1,0 +1,9 @@
+[qbz]
+name=QBZ - Native hi-fi player and headless daemon
+baseurl=https://vicrodh.github.io/qbz-rpm/repo/$basearch
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://vicrodh.github.io/qbz-rpm/qbz-rpm-key.gpg
+metadata_expire=6h
+skip_if_unavailable=False
